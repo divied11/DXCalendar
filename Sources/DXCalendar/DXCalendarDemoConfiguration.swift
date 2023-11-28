@@ -65,7 +65,7 @@ extension DXCalendarDemoConfiguration: DXCalendarDelegate {
                         .foregroundColor(selectedMonth == actualMonth ? (selected ? .white : .black) : .clear)
                 }
                 .frame(width: 30, height: 30)
-                .background(selected ? Color.blue : .clear)
+                .background(selectedMonth == actualMonth ? (selected ? Color.blue : .clear) : .clear)
                 .cornerRadius(5)
             } else {
                 Text(" ")
