@@ -24,7 +24,7 @@ public struct DXCalendar<Configuration>: View where Configuration: DXCalendarDel
                     VStack {
                         configuration.dxCalendarTitleView(date: monthDate)
                         
-                        LazyVGrid(columns: Array(repeating: GridItem(), count: 7), spacing: 10) {
+                        LazyVGrid(columns: Array(repeating: GridItem(), count: 7), spacing: configuration.dx_rowSpacing) {
                             let weekDays = viewModel.getDayNames(format: configuration.dx_weekDaysFormat, codeLang: configuration.dx_weekDaysLanguage)
                             ForEach(weekDays, id: \.self) { day in
                                 configuration.dxCalendarWeekdayView(day: day)
