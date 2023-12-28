@@ -16,6 +16,7 @@ extension DXCalendarDemoConfiguration: DXCalendarDelegate {
     var dx_height: CGFloat { 300.0 }
     var dx_weekDaysFormat: String { "EEE" }
     var dx_weekDaysLanguage: String { "en" }
+    var dx_rowSpacing: CGFloat { 10 }
     
     func dxCalendarDidChange(month: Int) {
         // Do something when month changes

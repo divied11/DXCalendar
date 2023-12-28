@@ -11,6 +11,7 @@ public protocol DXCalendarDelegate: ObservableObject {
     associatedtype DXCalendarWeekdayView: View
     
     var dx_height: CGFloat { get }
+    var dx_rowSpacing: CGFloat { get }
     var dx_weekDaysFormat: String { get }
     var dx_weekDaysLanguage: String { get }
     var dx_numberOfPastMonthsToShow: Int { get }
